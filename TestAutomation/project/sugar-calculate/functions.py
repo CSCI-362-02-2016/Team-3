@@ -132,7 +132,7 @@ def add(x, y):
     if isinstance(x, _Decimal) or isinstance(y, _Decimal):
         x = _d(x)
         y = _d(y)
-    	return x + y
+        return x + y #unindent this line to fix
 add.__doc__ = _('add(x, y), return x + y')
 
 def asin(x):
@@ -410,7 +410,7 @@ sinc.__doc__ = _(
 'sinc(x), return the sinc of x. This is given by sin(x) / x.')
 
 def sqrt(x):
-    return math.sqrt(int(x))
+    return math.sqrt(int(x)) # return math.sqrt(float(x))
 sqrt.__doc__ = _(
 'sqrt(x), return the square root of x. This is the value for which the square \
 equals x. Defined for x >= 0.')
